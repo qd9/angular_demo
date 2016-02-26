@@ -1,0 +1,13 @@
+<div>
+    <div ng-controller="loginCtrl">
+        <div class="col-xs-2 col-md-0 col-lg-0" style="padding:0px">
+            <ul id="my-tag">
+                <li ng-repeat="list in lists">
+                    <a href="#" ui-sref="{{ list.route }}" ng-class="list.icon"> {{ list.name }} </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-10 col-md-12 col-lg-12" ui-view>
+        </div>
+    </div>
+</div>

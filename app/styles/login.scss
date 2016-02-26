@@ -1,0 +1,23 @@
+ul {
+    list-style-type: none;
+    li {
+        font-size: x-large;
+    }
+}
+
+#my-tag>li {
+    >a {
+        text-decoration: none;
+        &:before {
+            vertical-align: middle;
+            // border-left: 3px solid red;
+        }
+    }
+    &:hover>a {
+        color: white;
+        background-color: red;
+        border-left: 3px solid black;
+        padding: 4px;
+        // vertical-align: middle;
+    }
+}

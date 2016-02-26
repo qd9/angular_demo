@@ -1,0 +1,15 @@
+<div>
+    <h1> Login Page </h1>
+</div>
+<form name="userForm" novalidate>
+    <div>
+        <label> Password </label>
+        <input type="password" name="password" ng-required="true" ng-model="user.password">
+        <p ng-show="userForm.password.$invalid">your password is required</p>
+    </div>
+    <div>
+        <label> Confirm Password </label>
+        <input type="password" name="confpassword" ng-required="true" ng-model="user.confpassword" ng-compare="password" >
+        <p ng-show="userForm.comfpassword.$error.compare &&!userForm.confpassword.$error.required"> confirm password doesn't match </p>
+    </div>
+</form>
